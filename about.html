@@ -25,54 +25,71 @@
         font-family: 'Share Tech', sans-serif;
       }
       .logo {
-      position: absolute;
-      top: 12px;
-      left: 2%;
-      max-width: 50px;
-      border-radius: 10px;
-      margin: auto;
-      transition: transform 0.3s ease;
-    }
+        position: absolute;
+        top: 12px;
+        left: 2%;
+        max-width: 50px;
+        border-radius: 10px;
+        margin: auto;
+        transition: transform 0.3s ease;
+      }
       .logo:hover{
         transform: scale(1.1);
       }
       nav {
-      display: flex;
-      justify-content: right;
-      margin-top: 1em;
-    }
+        display: flex;
+        justify-content: right;
+        margin-top: 1em;
+      }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-      font-family: 'Share Tech', sans-serif;
-      transition: transform 0.3s ease;
-    }
-    nav a:hover{
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        font-family: 'Share Tech', sans-serif;
+        transition: transform 0.3s ease;
+      }
+      nav a:hover{
         transform: scale(1.1);
       }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: black;
-      color: #fff;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      font-family: 'Share Tech', sans-serif;
-    }
-    .welcome h3{
-      font-family: 'Share Tech', sans-serif;
-      color: white;
-      text-align: center;
-      font: xx-large;
-    }
-    p{
-      color: white;
-      font-family: 'Share Tech', sans-serif;
-    }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-family: 'Share Tech', sans-serif;
+      }
+      .welcome h3{
+        font-family: 'Share Tech', sans-serif;
+        color: white;
+        text-align: center;
+        font: xx-large;
+      }
+      p{
+        color: white;
+        font-family: 'Share Tech', sans-serif;
+      }
+      .article {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        animation: slideIn 1s ease;
+      }
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
     <title>About</title>
 </head>
@@ -85,13 +102,17 @@
           <a href="about.html">About</a>
           <a href="tecstuffs.html">Techs</a>
         </nav>
-      </header>
-      <div class="welcome">
-        <h3>Welcome to the Tech Review Blog</h3>
-        <p>Where we can tell you about technology!</p>
-      </div>
-      <footer>
-        &copy; 2024 University of the Cordilleras
-      </footer>
+    </header>
+    <div class="welcome">
+      <h3>Welcome to the Tech Review Blog</h3>
+      <p>Where we can tell you about technology!</p>
+    </div>
+    <div class="article">
+      <h2>Article Title</h2>
+      <p>This is a sample article. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies mauris ac orci pharetra, sed tincidunt nisi iaculis. Duis consectetur, dui nec fermentum commodo, felis turpis sodales quam, vel congue metus lorem non quam.</p>
+    </div>
+    <footer>
+      &copy; 2024 University of the Cordilleras
+    </footer>
 </body>
 </html>
