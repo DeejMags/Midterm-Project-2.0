@@ -54,6 +54,27 @@
     nav a:hover{
         transform: scale(1.1);
       }
+      .card, .card2{
+      display: flex;
+      margin: 20px;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover,.card2:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .card img, .card2 img{
+      width: 150px;
+      height: fit-content;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .card description, .card2 description{
+      padding: 20px;
+    }
     footer {
       text-align: center;
       padding: 10px;
@@ -76,6 +97,42 @@
             <a href="tecstuffs.html">Techs</a>
           </nav>
         </header>
+        <div class="tablet">
+          <div class="card">
+            <img src="samsung-galaxy-tab-s9-plus.png" alt="samsung tablet">
+            <div class="description">
+              <h3>VR</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit inventore assumenda commodi, hic iste alias nulla non magni similique labore quos numquam laboriosam! Molestiae sequi dignissimos voluptates placeat cum. Laboriosam?</p>
+            </div>
+          </div>
+        </div>
+        <div class="tablet">
+          <div class="card">
+            <img src="ipad-mini-finish-select-gallery-202211-space-gray-wifi_FMT_WHH.jpg" alt="ipad">
+            <div class="description">
+              <h3>iPad Mini</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit inventore assumenda commodi, hic iste alias nulla non magni similique labore quos numquam laboriosam! Molestiae sequi dignissimos voluptates placeat cum. Laboriosam?</p>
+            </div>
+          </div>
+        </div>
+  <div class="cp">
+      <div class="card2">
+        <img src="gsmarena_001.jpg" alt="samsung">
+        <div class="description">
+          <h3>Samsung Galaxy S24 Ultra</h3>
+          <p>This phone has a feature of their own which is a Galaxy AI which can circle any thing and edit using an AI and they kind of copying Apple of using the body from Aluminum to Titanium</p>
+        </div>
+      </div>
+    </div>
+    <div class="cp">
+      <div class="card2">
+        <img src="iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium.jpg" alt="iphone">
+        <div class="description">
+          <h3>iPhone 15 Pro Max</h3>
+          <p>This phone has a new feature which they use a new connector which is a USB type C since Apple doesn't want to use the Lightning Port that they use for a long time and now they changed it. Also the battery is still low mAh</p>
+        </div>
+      </div>
+    </div>
 </body>
 <footer>
     &copy; 2024 University of the Cordilleras
